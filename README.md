@@ -3,6 +3,10 @@ hphp-tools
 
 Tools to aid in building or using HpHp
 
+Slides on this are:
+http://www.slideshare.net/nickgsuperstar/static-analysis-for-php
+
+
 Hi
 
 here's what you do
@@ -34,3 +38,10 @@ your new RPM is
 /usr/src/redhat/RPMS/x86_64/hphp-DATE-1.x86_64.rpm
 
 tada!
+
+
+Nick Galbreath
+@ngalbreath
+
+2012-05-19
+Verona, Italy
