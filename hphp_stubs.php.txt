@@ -1,0 +1,142 @@
+<?php
+
+// sample stub file for use with hphp
+
+
+/** These are bogus function definitions for extensions not in hphp core.
+ *   The extension is ".txt" so it skips the commit checks
+ */
+
+// http://php.net/manual/en/function.cal-days-in-month.php
+function cal_days_in_month($calendar, $month, $year) {
+    return 1;
+}
+
+
+// http://us2.php.net/manual/en/function.filter-var.php
+function filter_var($var, $filter=0, $options=NULL) {
+    return $var;
+}
+
+// http://us2.php.net/manual/en/function.finfo-open.php
+function finfo_open($options = 0, $magic_file=NULL) {
+    return TRUE;
+}
+
+// http://us2.php.net/manual/en/function.finfo-file.php
+function finfo_file($finfo, $file_name = NULL, $options = 0, $context = NULL) {
+    return '';
+}
+
+// http://us2.php.net/manual/en/function.finfo-close.php
+function finfo_close($finfo) {
+    return TRUE;
+}
+
+// http://us2.php.net/manual/en/function.ftp-login.php
+function ftp_login($stream, $username, $password) {
+    return TRUE;
+}
+
+// http://us3.php.net/manual/en/function.ftp-alloc.php
+function ftp_alloc($ftp_stream , $filesize, $result) {
+    return TRUE;
+}
+
+function ftp_put($stream, $remote, $local, $mode, $startpos=0) {
+    return TRUE;
+}
+function ftp_ssl_connect($url) {
+    return NULL;
+}
+function ftp_close($resource) {
+    return TRUE;
+}
+function ftp_chdir($stream, $dir) {
+    return TRUE;
+}
+function ftp_get($stream, $local, $remote, $mode, $pos=0) {
+    return TRUE;
+}
+function ftp_connect($host) {
+    return NULL;
+}
+function ftp_pasv($stream, $foo) {
+    return TRUE;
+}
+function ftp_delete($stream, $file) {
+    return TRUE;
+}
+function ftp_nlist($stream, $directory) {
+    return array();
+}
+
+http://php.net/manual/en/function.stats-cdf-chisquare.php
+function stats_cdf_chisquare($par1, $par2, $which) {
+    return 1.234;
+}
+
+// http://us3.php.net/manual/en/function.geoip-record-by-name.php
+function geoip_record_by_name($name) {
+    return array();
+}
+
+// http://php.net/manual/en/function.geoip-time-zone-by-country-and-region.php
+function geoip_time_zone_by_country_and_region($county, $region) {
+    return '';
+}
+
+// http://us3.php.net/manual/en/function.filter-input.php
+// not sure i got this right
+function filter_input($type, $varname, $filter=1, $options=null) {
+    return $varname;
+}
+
+// http://php.net/manual/en/tidy.parsestring.php
+function tidy_parse_string($input, $options, $encoding) {
+    return array();
+}
+
+// OAuth is a C-extension.
+class OAuthException {
+    public function __construct($str) {
+    }
+}
+
+class OAuthProvider {
+    static function reportProblem($oex) {
+
+    }
+
+    function isRequestToken($req) {
+        return TRUE;
+    }
+
+    function tokenHandler(array $foo) {
+    }
+
+    function timestampNonceHandler(array $foo) {
+    }
+
+    function consumerHandler(array $foo) {
+    }
+
+    function checkOAuthRequest() {
+    }
+    function isRequestTokenEndpoint($s) {
+        return TRUE;
+    }
+    function getLastResponse() {
+        return 200;
+    }
+}
+
+class OAuth {
+    public function __construct($key, $secret, $alg='SHA1', $type=0) {
+    }
+}
+
+class GearmanClient {
+    function setTimeout($val) {
+    }
+}
